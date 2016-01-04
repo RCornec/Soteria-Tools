@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">104.171.4.189</Value>
+    </Setting>
+    <Setting Name="Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1433</Value>
+    </Setting>
+    <Setting Name="DBName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DBTools</Value>
+    </Setting>
+    <Setting Name="User" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ToolUser</Value>
+    </Setting>
+    <Setting Name="pw" Type="System.String" Scope="User">
+      <Value Profile="(Default)">xS28SPCGVVEaw4vr</Value>
+    </Setting>
+    <Setting Name="ConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source= 104.171.4.189, 1433;Network Library=DBMSSOCN; Initial Catalog= DBTools ;User ID= ToolUser;Password= xS28SPCGVVEaw4vr;</Value>
+    </Setting>
+    <Setting Name="Lastchanged" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2015-07-27</Value>
+    </Setting>
+    <Setting Name="SoteriaDBName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Soteria</Value>
+    </Setting>
+    <Setting Name="SoteriaUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Tester1</Value>
+    </Setting>
+    <Setting Name="Soteriapw" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LtlRsK</Value>
+    </Setting>
+    <Setting Name="SoteriaConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SoteriaLastChanged" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2015-05-01</Value>
+    </Setting>
+    <Setting Name="SoteriaServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">104.171.4.189</Value>
+    </Setting>
+    <Setting Name="SoteriaPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1433</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

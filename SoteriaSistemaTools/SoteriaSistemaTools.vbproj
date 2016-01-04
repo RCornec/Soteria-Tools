@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{512C3128-9F3E-468B-B13D-29A70C54369A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SoteriaSistemaTools.My.MyApplication</StartupObject>
+    <RootNamespace>SoteriaSistemaTools</RootNamespace>
+    <AssemblyName>SoteriaSistemaTools</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SoteriaSistemaTools.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SoteriaSistemaTools.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\ChangeUserName.Designer.vb">
+      <DependentUpon>ChangeUserName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ChangeUserName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ChangeUserLogin.Designer.vb">
+      <DependentUpon>ChangeUserLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ChangeUserLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\CompanyInfos.Designer.vb">
+      <DependentUpon>CompanyInfos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CompanyInfos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ExistingUser.Designer.vb">
+      <DependentUpon>ExistingUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ExistingUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advanced\AddTraining.Designer.vb">
+      <DependentUpon>AddTraining.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Advanced\AddTraining.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advanced\SoteriaDatabaseSettings.Designer.vb">
+      <DependentUpon>SoteriaDatabaseSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Advanced\SoteriaDatabaseSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\NewEmployee.Designer.vb">
+      <DependentUpon>NewEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\NewEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\NewUser.Designer.vb">
+      <DependentUpon>NewUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advanced\AssignTrainingsToLevels.Designer.vb">
+      <DependentUpon>AssignTrainingsToLevels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Advanced\AssignTrainingsToLevels.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\AssignTrainingsToEmployees.Designer.vb">
+      <DependentUpon>AssignTrainingsToEmployees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\AssignTrainingsToEmployees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\ChangeEmployeeLogin.Designer.vb">
+      <DependentUpon>ChangeEmployeeLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\ChangeEmployeeLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\ChangeUserName.Designer.vb">
+      <DependentUpon>ChangeUserName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\ChangeUserName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\ChangeUserPassword.Designer.vb">
+      <DependentUpon>ChangeUserPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\ChangeUserPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\Personal Infos.Designer.vb">
+      <DependentUpon>Personal Infos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\Personal Infos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ChangeUserPassword.Designer.vb">
+      <DependentUpon>ChangeUserPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ChangeUserPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advanced\ToolsDatabaseSettings.Designer.vb">
+      <DependentUpon>ToolsDatabaseSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Advanced\ToolsDatabaseSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="All\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\CompanyPhysicalOrganization.designer.vb">
+      <DependentUpon>CompanyPhysicalOrganization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CompanyPhysicalOrganization.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputBox.designer.vb">
+      <DependentUpon>InputBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InputBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI.Designer.vb">
+      <DependentUpon>MDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuClass.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Basic\EmployeesInfos.Designer.vb">
+      <DependentUpon>EmployeesInfos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\EmployeesInfos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="All\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\ChangeUserName.resx">
+      <DependentUpon>ChangeUserName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ChangeUserLogin.resx">
+      <DependentUpon>ChangeUserLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ChangeUserPassword.resx">
+      <DependentUpon>ChangeUserPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\CompanyInfos.resx">
+      <DependentUpon>CompanyInfos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ExistingUser.resx">
+      <DependentUpon>ExistingUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advanced\AddTraining.resx">
+      <DependentUpon>AddTraining.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advanced\SoteriaDatabaseSettings.resx">
+      <DependentUpon>SoteriaDatabaseSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\NewEmployee.resx">
+      <DependentUpon>NewEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\NewUser.resx">
+      <DependentUpon>NewUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\AssignTrainingsToEmployees.resx">
+      <DependentUpon>AssignTrainingsToEmployees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\ChangeEmployeeLogin.resx">
+      <DependentUpon>ChangeEmployeeLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\ChangeUserName.resx">
+      <DependentUpon>ChangeUserName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\ChangeUserPassword.resx">
+      <DependentUpon>ChangeUserPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\Personal Infos.resx">
+      <DependentUpon>Personal Infos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advanced\ToolsDatabaseSettings.resx">
+      <DependentUpon>ToolsDatabaseSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\CompanyPhysicalOrganization.resx">
+      <DependentUpon>CompanyPhysicalOrganization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputBox.resx">
+      <DependentUpon>InputBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI.resx">
+      <DependentUpon>MDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\EmployeesInfos.resx">
+      <DependentUpon>EmployeesInfos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All\SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.vbproj">
+      <Project>{1e3abf33-9703-42b8-aa4f-38452d32277e}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.vbproj">
+      <Project>{16011e1d-71b6-4ddd-9d9e-42a859902714}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\invalid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
